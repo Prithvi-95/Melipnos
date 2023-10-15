@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+    <style>
+        .navi {
+            z-index: 2;
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left;
+            font-size: 30px;
+            color: black;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+        }
+
+        .but {
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+        .but:hover {
+            background-color:rgb(236, 139, 197);
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+
+        body {
+            padding-left: 0%;
+            padding-right: 0%;
+            margin-left: 0%;
+            margin-right: 0%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            padding-bottom: 0%;
+            padding-top: 0%;
+            border-bottom: 0px;
+            background-color:rgb(240, 206, 161);
+        }
+
+        /* .nav2 {
+            position: relative;
+            top: 5px;
+            left: 575px;
+            height: 30px;
+            width: 200px;
+        } */
+
+        #hi {
+            height: 30px;
+            width: 300px;
+        }
+
+        /* .form1 {
+            position: relative;
+            top: 0px;
+            left: 400px;
+        } */
+
+        .search {
+            float: right;
+        }
+
+        .search button {
+            float: right;
+            padding: 6px 10px;
+            margin-top: 6px;
+            margin-right: 16px;
+            background: white;
+            height: 35px;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        .pro{
+            position: relative;
+            margin-top:0px ;
+            border-top: 0px;
+            padding-top: 0px;
+            left: 10%;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        #p1{
+            position: absolute;
+            left: 7%;
+            width:20%;
+            top:20%;
+            background-color:lightcoral;
+        }
+        #p2{
+            position: absolute;
+            left:40%;
+            width:20%;
+            top:20%;
+            background-color:lightcoral;
+            }
+        #p3{
+            position: absolute;
+            left:73%;
+            width:20%;
+            top: 20%;
+            background-color:lightcoral;
+        }
+        #p4{
+            position: absolute;
+            left: 7%;
+            width:20%;
+            top:105%;
+            background-color:lightcoral;
+        }
+
+        #p1 img{
+            border-radius: 20px;
+        }
+        #p2 img{
+            border-radius: 20px;
+        }
+        #p3 img{
+            border-radius: 20px;
+        }
+        #p5 img{
+            border-radius: 20px;
+        }
+        #p6 img{
+            border-radius: 20px;
+        }
+        #p7 img{
+            border-radius: 20px;
+        }
+        #p8 img{
+            border-radius: 20px;
+        }
+        #p9 img{
+            border-radius: 20px;
+        }
+        #p5{
+            position: absolute;
+            left:40%;
+            width:20%;
+            top:105%;
+            background-color:lightcoral;
+            }
+        #p6{
+            position: absolute;
+            left:73%;
+            width:20%;
+            top: 105%;
+            background-color:lightcoral;
+        }
+        #p7{
+            position: absolute;
+            left:7%;
+            width:20%;
+            top: 190%;
+            background-color:lightcoral;
+        }
+        #p8{
+            position: absolute;
+            left:40%;
+            width:20%;
+            top: 190%;
+            background-color:lightcoral;
+        }
+        #p9{
+            position: absolute;
+            left:73%;
+            width:20%;
+            top: 190%;
+            background-color:lightcoral;
+        }
+        .p{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 20px;
+        } 
+        .b{
+            border: none;
+            background-color: transparent;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            /* display: inline-block; */
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+        .b:hover{
+            border: none;
+            background-color:transparent;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            /* display: inline-block; */
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .cart{
+            position: absolute;
+            left: 68%;
+            top: 0px;
+            width: 20%;
+            background-color: transparent;
+            border-color: transparent;
+            transition: 0.5s;
+        }
+        .cart:hover{
+            position: absolute;
+            left: 68%;
+            top: 0px;
+            width: 20%;
+            background-color: transparent;
+            border-color: black;
+        }
+
+    </style>
+    <script src="_prod.js"></script>
+</head>
+
+<body onload="run()">
+    <nav class="navi"><b>
+        <a href="http://127.0.0.1:5500/_ama.html"><button class="but">Home</button></a>
+        <button class="but" >Seller login</button>
+        <a href="http://127.0.0.1:5500/_delivery.html"><button class="but">Track order</button></a>
+        <a href="http://127.0.0.1:5500/_aboutus.html"><button class="but" >About us</button></a></b>
+        <div class="search">
+            <form><input id="hi" type="text" placeholder="Search...">
+                <button type="submit" class="form1" value="Submit">search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="pro">
+        <p>All Products</p>
+        <a href="http://127.0.0.1:5500/cart.html"><button class="cart"><img width="10%" src="5a364b44ee59c3.0140575715135076529763.png"></button></a>
+        <hr style="width:80%;text-align:left;margin-left:0">
+    </div>
+
+
+    <div class="p" id="p1">
+        <a href=""><img src="cocaine.jpg" width="100%"></a>
+        <h1>Printer</h1>
+        <p>A fast running lazer printer that run on wireless network with wifi connection</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="4" min="1" max="5"></progress>
+        <p><b>1 ETH</b></p>
+        <button class="b" onclick="f1(x)">Buy Now</button>
+    </div>
+    <div class="p" id="p2">
+        <img src="mdma.jpg" width="100%">
+        <h1>Pumpkin</h1>
+        <p>A synthetic drug with stimulant and empathogenic effects, commonly used recreationally for its mood-enhancing and empathetic qualities.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="3" min="1" max="5"></progress>
+        <p><b>1 ETH</b></p>
+        <button class="b" onclick="f1(y)">Buy Now</button>
+    </div>
+    <div class="p" id="p3">
+        <img src="weed.jpg" width="100%">
+        <h1>projector</h1>
+        <p>A popular recreational and medicinal plant with psychoactive effects, known for its calming and mind-altering properties.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="5" min="1" max="5"></progress>
+        <p><b>2 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+    <div class="p" id="p4">
+        <img src="hmgoepprod.jpg" width="100%">
+        <h1>T-shirt</h1>
+        <p>Casual, comfortable clothing staple for everyday wear, available in various colors and styles, perfect for expressing personal style.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="2" min="1" max="5"></progress>
+        <p><b>1 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+    <div class="p" id="p5">
+        <img src="airforce.jpg" width="100%">
+        <h1>Nike Air Force 1</h1>
+        <p>Nike Air Force 1 sneakers, classic and iconic footwear known for comfort, style, and cultural significance in street fashion.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="4" min="1" max="5"></progress>
+        <p><b>0.01 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+    <div class="p" id="p6">
+        <img src="iphone.webp" width="100%">
+        <h1>Iphone</h1>
+        <p>Apple's flagship smartphone, renowned for its sleek design, advanced features, and user-friendly interface, a status symbol in tech.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="4" min="1" max="5"></progress>
+        <p><b>5 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+    <div class="p" id="p7">
+        <img src="headphones.jpg" width="100%">
+        <h1>Headphones</h1>
+        <p>Audio devices worn over ears, delivering immersive sound quality for music and entertainment, available in wired and wireless options.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="3" min="1" max="5"></progress>
+        <p><b>1 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+    <div class="p" id="p8">
+        <img src="gwagon.jpg" width="100%">
+        <h1>G-Wagon</h1>
+        <p>Luxurious Mercedes-Benz SUV known for its power, opulence, and off-road capabilities, a symbol of automotive extravagance.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="5" min="1" max="5"></progress>
+        <p><b>200000 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+    <div class="p" id="p9">
+        <img src="jager.jpg" width="100%">
+        <h1>Jägermeister</h1>
+        <p>Iconic German herbal liqueur with a unique flavor profile, often enjoyed as a shot or in cocktails, a party favorite.</p>
+        <p>Rating <span class=flare></span></p>
+        <progress class="pratt" value="3" min="1" max="5">Rating</progress>
+        <p><b>10000 ETH</b></p>
+        <button class="b" onclick="f1(z)">Buy Now</button>
+    </div>
+
+    <script>
+        function run()
+        {
+            var xx=document.querySelectorAll(".flare")
+            for (let i=0; i<xx.length; i++)
+            {
+                let y=document.getElementsByClassName("pratt")
+                if (y[i].value>3)
+                {
+                    xx[i].innerHTML="<b>:Recomended</b>"
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

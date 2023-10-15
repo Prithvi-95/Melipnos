@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="melipnos.jpg" type="image/x-icon">
+    <title>Order Tracking DApp</title>
+    <link rel="stylesheet" href="_del.css">
+
+    <!-- UniIcon CDN Link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>nav {
+        z-index: 2;
+        background-color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: right;
+        font-size: 30px;
+        color: black;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+    }
+
+    .center {
+        width: 10%;
+        background-color: black;
+        margin-right: 35%;
+        margin-top: 20px;
+        position: relative;
+    }
+    .but {
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+
+        .but:hover {
+            background-color:rgb(236, 139, 197);
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 15px;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <nav><b><a href="http://127.0.0.1:5500/_ama.html"><img src="Screenshot_2023-10-14_122922-removebg-preview.png"
+        alt="logo" class="center"></a>
+        <a href="http://127.0.0.1:5500/_ama.html"><button class="but">Home</button></a>
+        <button class="but" >Seller login</button>
+        <a href="http://127.0.0.1:5500/_delivery.html"><button class="but">Track order</button></a>
+        <a href="http://127.0.0.1:5500/_aboutus.html"><button class="but" >About us</button></a></b>
+</nav>
+    <div class="main">
+
+        <div class="head">
+            <p class="head_1"><span>Delivery Tracking</span></p>
+        </div>
+
+        <ul>
+            <li>
+                <i class="icon uil uil-capture"></i>
+                <div class="progress one">
+                    <p>1</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Order Recieved</p>
+            </li>
+            <li>
+                <i class="icon uil uil-clipboard-notes"></i>
+                <div class="progress two">
+                    <p>2</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Ordered In Transit</p>
+            </li>
+            <li>
+                <i class="icon uil uil-credit-card"></i>
+                <div class="progress three">
+                    <p>3</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Order Completed</p>
+            </li>
+            
+        </ul>
+
+    </div>
+
+    <script >const one = document.querySelector(".one");
+        const two = document.querySelector(".two");
+        const three = document.querySelector(".three");
+        const four = document.querySelector(".four");
+        const five = document.querySelector(".five");
+        
+        one.onclick = function() {
+            one.classList.add("active");
+            two.classList.remove("active");
+            three.classList.remove("active");
+            four.classList.remove("active");
+            five.classList.remove("active");
+        }
+        
+        two.onclick = function() {
+            one.classList.add("active");
+            two.classList.add("active");
+            three.classList.remove("active");
+            four.classList.remove("active");
+            five.classList.remove("active");
+        }
+        three.onclick = function() {
+            one.classList.add("active");
+            two.classList.add("active");
+            three.classList.add("active");
+            four.classList.remove("active");
+            five.classList.remove("active");
+        }
+        four.onclick = function() {
+            one.classList.add("active");
+            two.classList.add("active");
+            three.classList.add("active");
+            four.classList.add("active");
+            five.classList.remove("active");
+        }
+        five.onclick = function() {
+            one.classList.add("active");
+            two.classList.add("active");
+            three.classList.add("active");
+            four.classList.add("active");
+            five.classList.add("active");
+        }
+        </script>
+</body>
+</html>
